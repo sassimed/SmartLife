@@ -1,0 +1,84 @@
+<div class="card">
+    <div class="flex justify-content-between flex-column-reverse md:flex-row align-items-center">
+        <div>
+            <div class="text-xl text-900 mb-4 mt-4 md:mt-0 text-center md:text-left font-semibold md:pr-4">
+                Le réseau WiFi
+            </div>
+            <div class="flex flex-wrap justify-content-center md:justify-content-start gap-3">
+                <span class="inline-flex align-items-center py-2 px-3 font-medium border-1 surface-border border-round">
+                    <i class="pi pi-clock text-primary mr-2"></i>
+                    <span class="text-900">2d ago</span>
+                </span>
+                <span class="inline-flex align-items-center py-2 px-3 font-medium border-1 surface-border border-round">
+                    <i class="pi pi-comments text-primary mr-2"></i>
+                    <span class="text-900">24</span>
+                </span>
+                <span class="inline-flex align-items-center py-2 px-3 font-medium border-1 surface-border border-round">
+                    <i class="pi pi-eye text-primary mr-2"></i>
+                    <span class="text-900">124</span>
+                </span>
+            </div>
+        </div>
+        <div class="flex flex-column align-items-center justify-content-center">
+            <img class="w-4rem h-4rem" src="assets/demo/images/avatar/circle/avatar-f-2@2x.png" />
+            <span class="mt-3 font-bold text-900 text-center white-space-nowrap">Jane Cooper</span>
+        </div>
+    </div>
+    <div class="text-center my-6">
+        <img src="assets/demo/images/blog/wifi-article-detail.png" alt="Image" class="w-full">
+    </div>
+    <p class="line-height-3 text-lg mb-4">
+        Le réseau WiFi est un moyen efficace pour connecter différents objets. Il offre plusieurs avantages par rapport à d'autres technologies de connectivité. 
+        Dans cet article, nous allons passer en revue les points forts du réseau WiFi pour connecter différents objets.
+    </p>
+    <div class="text-2xl text-900 mb-4 font-semibold">
+        Large couverture :
+    </div>
+    <p class="line-height-3 text-lg mb-4">
+        Le réseau WiFi est capable de couvrir de grandes distances et de connecter plusieurs objets simultanément. 
+        Cette large couverture permet une utilisation flexible et étendue pour connecter différents objets dans un espace donné.
+    </p>
+    <div class="text-2xl text-900 mb-4 font-semibold">
+        Haute vitesse de transmission :
+    </div>
+    <p class="line-height-3 text-lg mb-4">
+        Les réseaux WiFi modernes sont conçus pour offrir une vitesse de transmission élevée. 
+        Les objets connectés peuvent donc transmettre des données en temps réel, 
+        ce qui est essentiel pour de nombreuses applications telles que les objets connectés pour la santé, la sécurité et le suivi des performances.
+    </p>
+    <div class="text-2xl text-900 mb-4 font-semibold">
+        Sécurité :
+    </div>
+    <p class="line-height-3 text-lg mb-4">
+        Les réseaux WiFi sont sécurisés avec des protocoles de sécurité tels que WPA, WPA2 et WEP. 
+        Ces protocoles protègent les données transmises sur le réseau contre toute intrusion non autorisée, 
+        garantissant ainsi la sécurité des objets connectés.</p>
+    <div class="text-2xl text-900 mb-4 font-semibold">
+        Facilité d'utilisation :
+    </div>
+    <p class="line-height-3 text-lg mb-4">
+        Les réseaux WiFi sont faciles à configurer et à utiliser. 
+        Les utilisateurs n'ont pas besoin de compétences techniques particulières pour configurer leur réseau et connecter leurs objets. 
+        Cette facilité d'utilisation est essentielle pour encourager l'adoption de la technologie des objets connectés.
+    </p>
+    <div class="text-2xl text-900 mb-4 font-semibold">
+        Flexibilité :
+    </div>
+    <p class="line-height-3 text-lg mb-4">
+        Les réseaux WiFi offrent une grande flexibilité en termes de configuration et de personnalisation. 
+        Les utilisateurs peuvent personnaliser leur réseau pour répondre à leurs besoins spécifiques, 
+        en fonction du nombre d'objets à connecter et de la distance de transmission.
+    </p>
+    <p class="line-height-3 text-lg mb-4">
+        En résumé, le réseau WiFi offre de nombreux avantages pour connecter différents objets. 
+        Il offre une large couverture, une haute vitesse de transmission, une sécurité élevée, une facilité d'utilisation et une grande flexibilité de configuration. 
+        Ces avantages font du réseau WiFi une solution de connectivité privilégiée pour les objets connectés.
+    </p>
+    <div class="flex flex-column sm:flex-row my-8 w-full gap-3">
+        <button pButton pRipple icon="pi pi-twitter" class="p-button-secondary" label="Twitter"></button>
+        <button pButton pRipple icon="pi pi-facebook" class="p-button-secondary" label="Facebook"></button>
+        <button [routerLink]="['/apps/blog/edit']" pButton pRipple icon="pi pi-pencil" class="sm:ml-auto" label="Edit Post"></button>
+    </div>
+    <app-blog-comments [comments]="comments"></app-blog-comments>
+    <app-new-comment></app-new-comment>
+</div>
